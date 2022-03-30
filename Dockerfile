@@ -3,6 +3,7 @@
 FROM python:3.6.1-alpine
 
 #define the present working directory
+RUN pip install --upgrade pip
 
 WORKDIR /docker-flask-test
 
