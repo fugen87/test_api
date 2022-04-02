@@ -4,8 +4,8 @@ FROM python:3.6.1-alpine
 
 #define the present working directory
 RUN pip install --upgrade pip
-RUN pip install curl
-
+RUN sudo apt update
+RUN sudo apt install curl
 WORKDIR /docker-flask-test
 
 #copy the contents into the working directory
